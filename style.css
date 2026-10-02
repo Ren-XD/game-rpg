@@ -1,0 +1,46 @@
+*{box-sizing:border-box;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:#0b0a12;overflow:hidden;font-family:Georgia,'Trebuchet MS',serif;color:#fff}
+#game{position:absolute;left:50%;top:50%;width:min(100vw,177.78vh);height:min(100vh,56.25vw);transform:translate(-50%,-50%);font-size:min(1.25vw,2.2222vh);overflow:hidden;background:#000}
+#game>*{position:absolute}
+#c{left:0;top:0;width:100%;height:100%;image-rendering:pixelated}
+.box{background:linear-gradient(#4a3320ee,#2a190aee);border:.18em solid #d9a93b;border-radius:.6em;box-shadow:0 .3em .8em #0009}
+button{font:inherit;font-size:.9em;color:#fff;background:linear-gradient(#7a5a2a,#4a3010);border:.14em solid #e8c060;border-radius:.4em;padding:.25em .6em;cursor:pointer;margin:.15em}
+button:active,.on{background:#c8902a}
+.hide{display:none!important}
+#ptag{left:1em;top:1em;width:21em;padding:.5em .7em}
+#pname{font-size:1.2em;color:#ffd23a}
+.bar{position:relative;height:1.3em;background:#000a;border-radius:.3em;margin:.25em 0;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;height:100%;transition:width .15s}
+.bar span{position:absolute;width:100%;text-align:center;font-size:.75em;line-height:1.7em}
+#qt{left:1em;top:12em;padding:.4em .7em;font-size:.85em;max-width:22em}
+#top{right:.8em;top:.8em;text-align:right}
+#gold{position:static;display:inline-block;padding:.3em .8em;color:#ffd23a;font-weight:bold}
+#mm{right:1em;top:7.5em;width:10em;height:6em}
+#joy{left:3em;bottom:3em;width:13em;height:13em;border-radius:50%;background:#fff2;border:.2em solid #fff6}
+#knob{position:absolute;left:50%;top:50%;width:5em;height:5em;border-radius:50%;background:#fffa;transform:translate(-50%,-50%)}
+.sk{position:absolute;width:5.4em;height:5.4em;border-radius:50%;padding:0;margin:0;background:radial-gradient(#6b4dba,#2a1a55);border:.2em solid #e8c060;overflow:hidden;color:#fff}
+.sk.lo{filter:grayscale(.8)}
+.sk .ic{font-size:2.2em;line-height:1.7;display:block}
+.sk .co{position:absolute;left:0;bottom:0;width:100%;background:#000b}
+.sk .ct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:1.3em}
+.sk small{position:absolute;bottom:.15em;left:0;width:100%;font-size:.6em;color:#9cf}
+.s0{right:2em;bottom:2em;width:7em;height:7em}.s1{right:10.5em;bottom:1.5em}.s2{right:9.2em;bottom:7.6em}
+.s3{right:3.2em;bottom:10.4em}.s4{right:15.6em;bottom:6.4em}.s5{right:9.4em;bottom:14em}
+#skills{right:0;bottom:0;width:0;height:0}
+#act{left:50%;bottom:4em;transform:translateX(-50%);width:4.5em;height:4.5em;border-radius:50%;font-size:1.4em;background:#2a8a3a}
+#toast{left:50%;top:1em;transform:translateX(-50%);background:#000b;padding:.4em 1em;border-radius:1em;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
+#banner{left:0;right:0;top:28%;text-align:center;font-size:4.5em;font-weight:bold;color:#ffd23a;text-shadow:0 0 .3em #f80,0 .05em #a40;pointer-events:none;opacity:0}
+#banner.show{animation:pop 1.8s}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}20%{opacity:1;transform:scale(1.1)}75%{opacity:1;transform:scale(1)}100%{opacity:0;transform:translateY(-1em)}}
+#dlg{left:15%;right:15%;bottom:3em;padding:1em;font-size:1.2em;z-index:5}
+#panel{left:6%;right:6%;top:6%;bottom:6%;padding:1em 1.2em;overflow:auto;z-index:6;font-size:1.05em}
+#panel,#panel *{touch-action:pan-y}
+#x{position:sticky;float:right;top:0}
+h2,h3{margin:.2em 0;color:#ffd23a}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15em,1fr));gap:.5em}
+.cell{background:#0006;border:.15em solid #6a4a20;border-radius:.4em;padding:.4em;font-size:.9em}
+#title{inset:0;z-index:20;background:radial-gradient(#2c5a8a,#0b0a12);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+#title h1{font-size:6em;margin:0;color:#ffd23a;text-shadow:0 .06em #a40,0 0 .4em #f80;letter-spacing:.1em}
+#title h2{margin:0 0 1em;font-size:2em;color:#fff}
+#title button{font-size:1.6em;padding:.4em 1.4em}
+#title p{opacity:.7;font-size:.9em}
